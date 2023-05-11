@@ -1,0 +1,67 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navigacija {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  background-color: rgb(236, 178, 178);
+}
+
+.kartica-obavijesti {
+  background-color: rgb(65, 158, 158);
+
+}
+
+.sve-obavijesti {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.obavijest-title-pane {
+  background-color: rgb(49, 170, 85);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.obavijest-title-pane-vazno {
+  background-color: rgb(175, 62, 47);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.botun-brisanje {
+  background-color: red;
+}
+
+.input-forma-zivotinja {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.input-forma-lijevo {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-forma-desno {
+  display: flex;
+  flex-direction: column;
+}
+
+.kartica-zivotinje {
+  background-color: beige;
+  border-radius: 20;
+}
