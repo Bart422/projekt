@@ -48,20 +48,9 @@ function Lista() {
                     <input name="vrsta" type="radio" value="all" ></input>
                 </label>
             </div>
-            <div onChange={(event) => (setFilterDom(event.target.value))}>
-                <label> Udomljen
-                    <input name="dom" type="radio" value="true" ></input>
-                </label>
-                <label> Neudomljen
-                    <input name="dom" type="radio" value="false"></input>
-                </label>
-                <label> All
-                    <input name="dom" type="radio" value="all" ></input>
-                </label>
-            </div>
 
             <div className="sve-zivotinje-kartica">
-                {lista.map(e => (filterDom == "true" && e.udomljen == true && filterVrsta == e.vrsta &&
+                {lista.map(e => (filterVrsta == e.vrsta &&
                     < div key={e.id} className="kartica-zivotinje" >
                         <h2>{e.ime}</h2>
                         <p>Vrsta:{e.vrsta}</p>
@@ -71,7 +60,7 @@ function Lista() {
                         {userRole == "admin" && <button id={e.id} onClick={urediZivotinju}>Uredi</button>}
                     </div>
                 ))}
-                {lista.map(e => (filterDom == "all" && filterVrsta == e.vrsta &&
+                {lista.map(e => (filterVrsta == "all" &&
                     < div key={e.id} className="kartica-zivotinje" >
                         <h2>{e.ime}</h2>
                         <p>Vrsta:{e.vrsta}</p>
@@ -81,16 +70,8 @@ function Lista() {
                         {userRole == "admin" && <button id={e.id} onClick={urediZivotinju}>Uredi</button>}
                     </div>
                 ))}
-                {lista.map(e => (filterDom == "all" && filterVrsta == "all" &&
-                    < div key={e.id} className="kartica-zivotinje" >
-                        <h2>{e.ime}</h2>
-                        <p>Vrsta:{e.vrsta}</p>
-                        <p>Udomljen:{e.udomljen ? <p>Da</p> : <p>Ne</p>}</p>
-                        <p>{e.opis}</p>
-                        {e.udomljen == false && <button id={e.id} onClick={udomi}>Udomi</button>}
-                        {userRole == "admin" && <button id={e.id} onClick={urediZivotinju}>Uredi</button>}
-                    </div>
-                ))}
+
+
             </div>
         </div >
     )
