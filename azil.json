@@ -58,6 +58,26 @@
       "pregled": "2000-02-13",
       "udomljen": false,
       "id": 2
+    },
+    {
+      "ime": "Ante",
+      "vrsta": "pas",
+      "cip": true,
+      "godine": "22",
+      "opis": "Sladak",
+      "pregled": "",
+      "udomljen": false,
+      "id": 3
+    },
+    {
+      "ime": "ha",
+      "vrsta": "macka",
+      "cip": true,
+      "godine": "23",
+      "opis": "ha",
+      "pregled": "",
+      "udomljen": false,
+      "id": 4
     }
   ]
 }

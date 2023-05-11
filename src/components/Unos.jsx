@@ -67,9 +67,7 @@ function Unos() {
                             <label> Pas
                                 <input onChange={promjenaUlaza} type="radio" id="pas" name="vrsta" value="pas" />
                             </label>
-                            <label> Ostalo
-                                <input onChange={promjenaUlaza} type="radio" id="ostalo" name="vrsta" value="ostalo" />
-                            </label>
+
                             <label> Godine
                                 <input onChange={promjenaUlaza} name="godine" required type="number"></input>
                             </label>
